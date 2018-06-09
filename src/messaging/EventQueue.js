@@ -1,6 +1,6 @@
-const env = require('./Environment');
+const env = require('./../utils/Environment');
 const amqp = require('amqplib');
-const logger = require('./Logger');
+const logger = require('./../utils/Logger');
 const Q = require('q');
 const uuidV1 = require('uuid/v1');
 

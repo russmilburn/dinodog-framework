@@ -1,8 +1,8 @@
 const jwt = require('jsonwebtoken');
-const logger = require('./Logger');
-const ServiceError = require('./ServiceError');
-const StatusCode = require('./StatusCode');
-const env = require('./Environment');
+const logger = require('./../utils/Logger');
+const ServiceError = require('./../utils/ServiceError');
+const StatusCode = require('./../utils/StatusCode');
+const env = require('./../utils/Environment');
 const path = require('path');
 const fs = require('fs');
 
