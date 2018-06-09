@@ -29,7 +29,7 @@ class EventQueue {
   connect() {
 
     let eqUrl = this.createEQUrl();
-    logger.info('[EVENT QUEUE] connecting...' + eqUrl);
+    logger.info('[EVENT QUEUE] connecting...');
     let that = this;
     let promise = new Promise(function (resolve, reject) {
       amqp.connect(eqUrl)
