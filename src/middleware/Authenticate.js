@@ -24,7 +24,7 @@ class Authenticate {
 
       //TODO: add key to database or in secure key store
       let keyName = env.getProperty('JWT_PUBLIC_KEY', 'jwtRS256.key.pub');
-      let keyPath = path.join(__dirname, '..', '..', 'keys', keyName);
+      let keyPath = path.join(__dirname, '..', '..', '..', '..', 'keys', keyName);
       let publicKey = fs.readFileSync(keyPath).toString();
       jwt.verify(accessToken, publicKey, decodeOptions, (err, decoded) => {
         if (err) {

@@ -7,8 +7,8 @@ class BaseController{
     return this.router;
   }
   
-  getController(name) {
-    let Controller = require('./' + name);
+  getController(path) {
+    let Controller = require(path);
     let controller = new Controller();
     return controller.getRouter();
   }
